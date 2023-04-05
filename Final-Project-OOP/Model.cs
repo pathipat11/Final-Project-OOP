@@ -147,5 +147,12 @@ namespace Final_Project_OOP
             PriceTb.Text = "";
 
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Mainpage obj = new Mainpage();
+            obj.Show();
+            this.Hide();
+        }
     }
 }

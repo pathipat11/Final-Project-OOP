@@ -157,10 +157,11 @@
             this.label6.Size = new System.Drawing.Size(77, 28);
             this.label6.TabIndex = 11;
             this.label6.Text = "Logout";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Image = global::Final_Project_OOP.Properties.Resources.logout2;
             this.pictureBox7.Location = new System.Drawing.Point(4, 585);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(44, 41);

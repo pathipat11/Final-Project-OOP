@@ -166,5 +166,12 @@ namespace Final_Project_OOP
                 }
             }
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Mainpage obj = new Mainpage();
+            obj.Show();
+            this.Hide();
+        }
     }
 }

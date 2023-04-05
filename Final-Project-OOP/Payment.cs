@@ -74,5 +74,12 @@ namespace Final_Project_OOP
                 MessageBox.Show("An error has occurd!", "Directory not found!");
             }
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Mainpage obj = new Mainpage();
+            obj.Show();
+            this.Hide();
+        }
     }
 }
