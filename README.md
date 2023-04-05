@@ -30,7 +30,7 @@ class Infomation{
   -Model():void
   -Payment():void
   -Exit():void
-  -Login():void
+  -Logout():void
 }
 
   class Users{
@@ -90,14 +90,14 @@ class Infomation{
   -Infomation():void
   -Payment():void
   -Exit():void
-  -Login():void
+  -Logout():void
 }
   class Payment{
   -Print():void
   -Infomation():void
   -Model():void
   -Exit():void
-  -Login():void
+  -Logout():void
 }  
   
   Payment -- Infomation
