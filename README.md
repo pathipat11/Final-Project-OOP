@@ -97,6 +97,7 @@ class Infomation{
   -Model():void
   -Login():void
 }  
+  Product -- Payment
   Users -- Infomation
   Product -- Model
   Loading -- Mainpage
