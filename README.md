@@ -98,13 +98,18 @@ class Infomation{
   -Model():void
   -Login():void
 }  
+  
+  Payment -- Infomation
   Product -- Payment
   Users -- Infomation
   Product -- Model
   Loading -- Mainpage
   Mainpage -- Infomation
   Infomation -- Model
+  Infomation --Mainpage
   Model -- Payment
+  Model -- Mainpage
+  Payment -- Mainpage
   Product -- Bike1
   Product -- Bike2
   Product -- Bike3
