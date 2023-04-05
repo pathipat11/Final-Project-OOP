@@ -537,6 +537,7 @@
             this.DeleteBtb.TabIndex = 56;
             this.DeleteBtb.Text = "Delete";
             this.DeleteBtb.UseVisualStyleBackColor = true;
+            this.DeleteBtb.Click += new System.EventHandler(this.DeleteBtb_Click);
             // 
             // RentBtn
             // 

@@ -26,7 +26,7 @@ namespace Final_Project_OOP
             {
                 Myprogress.Value = 0;
                 timer1.Stop();
-                Infomation Mylogin = new Infomation();
+                Mainpage Mylogin = new Mainpage();
                 this.Hide();
                 Mylogin.Show();
             }

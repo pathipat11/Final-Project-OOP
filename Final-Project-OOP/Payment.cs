@@ -8,6 +8,7 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Final_Project_OOP
 {
@@ -42,7 +43,7 @@ namespace Final_Project_OOP
             BnameTb.Text = name;
             PriceTb.Text = price;
             DateTb.Text = date;
-            borrow.Text= bor;
+            BorrowTb.Text= bor;
             TimeTb.Text = time;
         }
 
@@ -53,27 +54,24 @@ namespace Final_Project_OOP
 
         private void PrintBtn_Click(object sender, EventArgs e)
         {
-            //save data from list to csv file
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "TEXT|*.txt|CSV|*.csv";
-            saveFileDialog.ShowDialog();
-            if (saveFileDialog.FileName != "")
+            try
             {
-                using (StreamWriter writer = new StreamWriter(saveFileDialog.FileName))
+                string filePath = @"D:\Pathipat\IN401105\Final-Project-OOP\Final-Project-OOP\bin\Debug\net6.0-windows"+"\\New folder\\" + BnameTb.Text+".txt";
+                StreamWriter A = new StreamWriter(filePath);
+                using (A)
                 {
-                    foreach (Users item in users)
-                    {
-                        writer.WriteLine(String.Format("{0}, {1}, {2}, {3}, {4}, {5}, {6}",
-                        item.Manage,
-                        item.Name,
-                        item.CardID,
-                        item.Mail,
-                        item.Phone,
-                        item.Date,
-                        item.Time));
+                    A.WriteLine(label8.Text + ":" + BnameTb.Text);
+                    A.WriteLine(label13.Text + ":" + PriceTb.Text);
+                    A.WriteLine(label3.Text + ":" + DateTb.Text);
+                    A.WriteLine(label5.Text + ":" + BorrowTb.Text);
+                    A.WriteLine(label9.Text + ":" + TimeTb.Text);
 
-                    }
+                    MessageBox.Show("Succeed");
                 }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("An error has occurd!", "Directory not found!");
             }
         }
     }

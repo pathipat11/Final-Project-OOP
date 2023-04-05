@@ -140,5 +140,12 @@ namespace Final_Project_OOP
         {
             timer1.Start();
         }
+
+        private void DeleteBtb_Click(object sender, EventArgs e)
+        {
+            BnameTb.Text = "";
+            PriceTb.Text = "";
+
+        }
     }
 }

@@ -50,7 +50,7 @@
             this.DateTb = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.borrow = new System.Windows.Forms.TextBox();
+            this.BorrowTb = new System.Windows.Forms.TextBox();
             this.BnameTb = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -243,7 +243,7 @@
             this.panel3.Controls.Add(this.DateTb);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.borrow);
+            this.panel3.Controls.Add(this.BorrowTb);
             this.panel3.Controls.Add(this.BnameTb);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label13);
@@ -305,13 +305,13 @@
             this.label5.TabIndex = 66;
             this.label5.Text = "Borrow";
             // 
-            // borrow
+            // BorrowTb
             // 
-            this.borrow.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.borrow.Location = new System.Drawing.Point(517, 255);
-            this.borrow.Name = "borrow";
-            this.borrow.Size = new System.Drawing.Size(167, 34);
-            this.borrow.TabIndex = 65;
+            this.BorrowTb.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BorrowTb.Location = new System.Drawing.Point(517, 255);
+            this.BorrowTb.Name = "BorrowTb";
+            this.BorrowTb.Size = new System.Drawing.Size(167, 34);
+            this.BorrowTb.TabIndex = 65;
             // 
             // BnameTb
             // 
@@ -356,7 +356,7 @@
             this.PrintBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PrintBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.PrintBtn.ForeColor = System.Drawing.Color.Crimson;
-            this.PrintBtn.Location = new System.Drawing.Point(550, 532);
+            this.PrintBtn.Location = new System.Drawing.Point(534, 531);
             this.PrintBtn.Name = "PrintBtn";
             this.PrintBtn.Size = new System.Drawing.Size(150, 46);
             this.PrintBtn.TabIndex = 53;
@@ -417,7 +417,7 @@
         private TextBox DateTb;
         private Label label3;
         private Label label5;
-        private TextBox borrow;
+        private TextBox BorrowTb;
         private Label label9;
         private TextBox TimeTb;
     }

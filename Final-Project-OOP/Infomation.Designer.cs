@@ -43,6 +43,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.SaveBtn = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.DeleteBtb = new System.Windows.Forms.Button();
@@ -72,7 +73,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.SaveBtn = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -250,12 +250,26 @@
             this.panel3.Size = new System.Drawing.Size(1072, 633);
             this.panel3.TabIndex = 1;
             // 
+            // SaveBtn
+            // 
+            this.SaveBtn.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SaveBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.SaveBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.SaveBtn.Location = new System.Drawing.Point(897, 170);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(150, 46);
+            this.SaveBtn.TabIndex = 71;
+            this.SaveBtn.Text = "Save";
+            this.SaveBtn.UseVisualStyleBackColor = false;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label10.ForeColor = System.Drawing.Color.Crimson;
-            this.label10.Location = new System.Drawing.Point(948, 75);
+            this.label10.Location = new System.Drawing.Point(928, 75);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(57, 28);
             this.label10.TabIndex = 70;
@@ -266,7 +280,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label12.ForeColor = System.Drawing.Color.Crimson;
-            this.label12.Location = new System.Drawing.Point(781, 81);
+            this.label12.Location = new System.Drawing.Point(761, 81);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(54, 28);
             this.label12.TabIndex = 69;
@@ -302,7 +316,7 @@
             // 
             this.TimeLb.AutoSize = true;
             this.TimeLb.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TimeLb.Location = new System.Drawing.Point(948, 112);
+            this.TimeLb.Location = new System.Drawing.Point(928, 112);
             this.TimeLb.Name = "TimeLb";
             this.TimeLb.Size = new System.Drawing.Size(88, 28);
             this.TimeLb.TabIndex = 54;
@@ -324,7 +338,7 @@
             // MailTb
             // 
             this.MailTb.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.MailTb.Location = new System.Drawing.Point(435, 111);
+            this.MailTb.Location = new System.Drawing.Point(415, 111);
             this.MailTb.Name = "MailTb";
             this.MailTb.Size = new System.Drawing.Size(167, 34);
             this.MailTb.TabIndex = 50;
@@ -332,7 +346,7 @@
             // DateCb
             // 
             this.DateCb.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DateCb.Location = new System.Drawing.Point(781, 112);
+            this.DateCb.Location = new System.Drawing.Point(761, 112);
             this.DateCb.Name = "DateCb";
             this.DateCb.Size = new System.Drawing.Size(161, 31);
             this.DateCb.TabIndex = 52;
@@ -340,7 +354,7 @@
             // NameTb
             // 
             this.NameTb.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.NameTb.Location = new System.Drawing.Point(88, 111);
+            this.NameTb.Location = new System.Drawing.Point(68, 111);
             this.NameTb.Name = "NameTb";
             this.NameTb.Size = new System.Drawing.Size(167, 34);
             this.NameTb.TabIndex = 44;
@@ -350,7 +364,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.Crimson;
-            this.label5.Location = new System.Drawing.Point(435, 80);
+            this.label5.Location = new System.Drawing.Point(415, 80);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(60, 28);
             this.label5.TabIndex = 51;
@@ -361,7 +375,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.Crimson;
-            this.label8.Location = new System.Drawing.Point(88, 80);
+            this.label8.Location = new System.Drawing.Point(68, 80);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(66, 28);
             this.label8.TabIndex = 45;
@@ -370,7 +384,7 @@
             // PhoneTb
             // 
             this.PhoneTb.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.PhoneTb.Location = new System.Drawing.Point(608, 111);
+            this.PhoneTb.Location = new System.Drawing.Point(588, 111);
             this.PhoneTb.Name = "PhoneTb";
             this.PhoneTb.Size = new System.Drawing.Size(167, 34);
             this.PhoneTb.TabIndex = 46;
@@ -380,7 +394,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.Color.Crimson;
-            this.label13.Location = new System.Drawing.Point(262, 80);
+            this.label13.Location = new System.Drawing.Point(242, 80);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(148, 28);
             this.label13.TabIndex = 49;
@@ -391,7 +405,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label9.ForeColor = System.Drawing.Color.Crimson;
-            this.label9.Location = new System.Drawing.Point(608, 80);
+            this.label9.Location = new System.Drawing.Point(588, 80);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(71, 28);
             this.label9.TabIndex = 47;
@@ -400,7 +414,7 @@
             // CardTb
             // 
             this.CardTb.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.CardTb.Location = new System.Drawing.Point(262, 111);
+            this.CardTb.Location = new System.Drawing.Point(242, 111);
             this.CardTb.Name = "CardTb";
             this.CardTb.Size = new System.Drawing.Size(167, 34);
             this.CardTb.TabIndex = 48;
@@ -539,20 +553,6 @@
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
-            // 
-            // SaveBtn
-            // 
-            this.SaveBtn.BackColor = System.Drawing.Color.MediumSpringGreen;
-            this.SaveBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SaveBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.SaveBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.SaveBtn.Location = new System.Drawing.Point(897, 170);
-            this.SaveBtn.Name = "SaveBtn";
-            this.SaveBtn.Size = new System.Drawing.Size(150, 46);
-            this.SaveBtn.TabIndex = 71;
-            this.SaveBtn.Text = "Save";
-            this.SaveBtn.UseVisualStyleBackColor = false;
-            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // Infomation
             // 
