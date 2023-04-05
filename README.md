@@ -11,8 +11,7 @@
 5) มีการออกบินค่าใช้จ่ายในการยืม
 6) เพื่อให้ผู้ที่ต้องการมีสุขภาพร่างกายแข็งแรงจึงได้จัดทำขึ้น
 ```
-3.โครงสร้างของโปรแกรม (Class diagram) ของโปรแกรม ใช้ Mermaid ในการเขียน ตัวอย่าง การเขียน Classdiagram ใน Markdown  
-Class Diagram
+3.โครงสร้างของโปรแกรม (Class diagram) ของโปรแกรม ใช้ Mermaid ในการเขียน ตัวอย่าง การเขียน Classdiagram ใน Markdown   
 ```mermaid
 classDiagram
   direction LR
@@ -23,7 +22,7 @@ classDiagram
 
 class Infomation{
   -Add():void
-  -Return Bike():void
+  -Return():void
   -Delete():void
   -Save():void
   -Exit():void
@@ -77,8 +76,7 @@ class Infomation{
   class Bike9{
   +Bike9():void
 }
-
-  Class Product{
+  class Product{
   -Name():void
   -Price():void
   -Image():void
@@ -86,6 +84,7 @@ class Infomation{
 
   class Model{
   -Exit():void
+  -Rent():void
   -Delete():void
   -Infomation():void
   -Payment():void
@@ -98,8 +97,12 @@ class Infomation{
   -Model():void
   -Login():void
 }  
-
-  
+  Users -- Infomation
+  Product -- Model
+  Loading -- Mainpage
+  Mainpage -- Infomation
+  Infomation -- Model
+  Model -- Payment
   Product -- Bike1
   Product -- Bike2
   Product -- Bike3
@@ -109,7 +112,6 @@ class Infomation{
   Product -- Bike7
   Product -- Bike8
   Product -- Bike9
-  
 ```
 4.ชื่อของผู้พัฒนาโปรแกรม
 ```
