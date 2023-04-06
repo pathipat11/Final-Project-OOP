@@ -104,7 +104,6 @@ class Infomation{
   Mainpage -- Infomation
   Users -- Infomation
   Payment -- Infomation
-  Product -- Payment
   Product -- Model
   Infomation -- Model
   Model -- Payment
