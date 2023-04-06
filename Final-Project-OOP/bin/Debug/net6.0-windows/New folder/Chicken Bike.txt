@@ -1,5 +1,5 @@
 Name Bicycle:Chicken Bike
 Price:3000
-Date:5/4/2566
-Borrow:3 Hours
-Time:23:54
+Date:6/4/2566
+Borrow:1 Hours
+Time:1:51
