@@ -100,14 +100,13 @@ class Infomation{
   -Logout():void
 }  
   
-  Payment -- Infomation
-  Product -- Payment
-  Users -- Infomation
-  Product -- Model
   Loading -- Mainpage
   Mainpage -- Infomation
+  Users -- Infomation
+  Payment -- Infomation
+  Product -- Payment
+  Product -- Model
   Infomation -- Model
-  Infomation --Mainpage
   Model -- Payment
   Model -- Mainpage
   Payment -- Mainpage
