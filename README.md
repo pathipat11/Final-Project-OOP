@@ -1,17 +1,19 @@
 1.ความเป็นมาของโปรแกรม
 ```
-ปัญหาคือ มีผู้คนจำนวนมากที่ต้องการเดินทางให้สะดวกสบายโดยการขับขี่จักรยานไปมหาวิทยาลัยหรือต้องการที่จะออกกำลังกายแต่ไม่มีจักรยานที่จะใช้ขับขี่ จึงออกแบบจัดทำขึ้นมาให้ยืมได้สะสวกสบายและรวดเร็วต่อการยืมจักรยาน
+ปัญหา คือ มีผู้คนจำนวนมากที่ต้องการเดินทางให้สะดวกสบายโดยการขับขี่จักรยานไปมหาวิทยาลัยหรือต้องการที่จะออกกำลังกายแต่ไม่มีจักรยานที่จะใช้ขับขี่
+จึงออกแบบจัดทำขึ้นมาให้ยืมได้สะสวกสบายและรวดเร็วต่อการยืมจักรยาน
 ```
 2.วัตถุประสงค์ของโปรแกรม
 ``` 
 1) เพื่อให้ผู้ที่ต้องการขับขี่จักรยาน
 2) สามารถยืมได้ง่ายสะดวกสบาย
-3) มีหลากหลายรุ่นให้เลือก
+3) มีจักรยานหลากหลายรุ่นให้เลือก
 4) มีการเก็บข้อมูลของผู้ยืมเพื่อที่จะนำไปต่อยอด
 5) มีการออกบินค่าใช้จ่ายในการยืม
 6) เพื่อให้ผู้ที่ต้องการมีสุขภาพร่างกายแข็งแรงจึงได้จัดทำขึ้น
 ```
-3.โครงสร้างของโปรแกรม (Class diagram) ของโปรแกรม ใช้ Mermaid ในการเขียน ตัวอย่าง การเขียน Classdiagram ใน Markdown   
+3.โครงสร้างของโปรแกรม (Class diagram) ของโปรแกรม ใช้ Mermaid ในการเขียน ตัวอย่าง การเขียน Classdiagram ใน Markdown
+Class Diagram
 ```mermaid
 classDiagram
   direction LR
@@ -25,10 +27,10 @@ class Infomation{
   -Return():void
   -Delete():void
   -Save():void
-  -Exit():void
   -Model():void
   -Payment():void
-  -Login():void
+  -Exit():void
+  -Logout():void
 }
 
   class Users{
@@ -83,26 +85,31 @@ class Infomation{
 }
 
   class Model{
-  -Exit():void
   -Rent():void
   -Delete():void
   -Infomation():void
   -Payment():void
-  -Login():void
+  -Exit():void
+  -Logout():void
 }
   class Payment{
-  -Exit():void
   -Print():void
   -Infomation():void
   -Model():void
-  -Login():void
+  -Exit():void
+  -Logout():void
 }  
-  Users -- Infomation
-  Product -- Model
+  
   Loading -- Mainpage
   Mainpage -- Infomation
+  Users -- Infomation
+  Payment -- Infomation
+  Product -- Payment
+  Product -- Model
   Infomation -- Model
   Model -- Payment
+  Model -- Mainpage
+  Payment -- Mainpage
   Product -- Bike1
   Product -- Bike2
   Product -- Bike3
