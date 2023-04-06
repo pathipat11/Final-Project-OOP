@@ -108,8 +108,7 @@ namespace Final_Project_OOP
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-            /*//save data from list to csv file
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
+          /*SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "TEXT|*.txt|CSV|*.csv";
             saveFileDialog.ShowDialog();
             if (saveFileDialog.FileName != "")
@@ -126,7 +125,6 @@ namespace Final_Project_OOP
                         item.Phone,
                         item.Date,
                         item.Time));
-
                     }
                 }
             }*/
@@ -153,9 +151,7 @@ namespace Final_Project_OOP
                             for (int j = 0; j < columnCount; j++)
                             {
                                 outputCSV[i] += InformationDGV.Rows[i - 1].Cells[j].Value.ToString() + "\t";
-
-                            }
-
+                            }   
                         }
                         File.WriteAllLines(sfd.FileName, outputCSV, Encoding.UTF8);
                     }

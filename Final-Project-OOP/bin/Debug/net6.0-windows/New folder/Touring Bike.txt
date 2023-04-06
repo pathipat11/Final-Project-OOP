@@ -1,0 +1,5 @@
+Name Bicycle:Touring Bike
+Price:5000
+Date:6/4/2566
+Borrow:5 Hours
+Time:9:36
